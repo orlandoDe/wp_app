@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <!-- get starded -->
+    <div class="welcome-screen-2" data-start="get_started" style="display: block;">
+      <div class="container">
+         <button class="welcome-screen-2-child" id="iniButton"></button>
+        <b class="get-started">Get Started</b>
+       <div class="everybody-can-train-parent">
+          <div class="everybody-can-train">Everybody Can Train</div>
+         <div class="fitnestx-wrapper">
+              <b class="fitnestx">
+              <span class="fitnestx-txt">
+                <span>Fitnest</span>
+                <span class="x">X</span>
+              </span>
+            </b>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!-- fin get started -->
+
+    <!-- login -->
+    <div class="login-page" style="display: none;">
+      <form>
+      <div class="container">
+        <div class="title-section">
+          <div class="hey-there">Hey there,</div>
+          <b class="welcome-back">Welcome Back</b>
+        </div>
+        <button class="button-login" id="login">
+          <div class="button-login-child"></div>
+          <div class="iconlyboldlogin-parent">
+            <img class="iconlyboldlogin" alt="" src="public/Login.svg" />
+
+            <b class="login">Login</b>
+          </div>
+        </button>
+         <div class="or">
+          <div class="or1">Or</div>
+          <img class="or-child" alt="" src="public/Vector-67.svg" />
+
+          <img class="or-item" alt="" src="public/Vector-68.svg" />
+        </div>
+        <a class="register-text" id="crearCuenta">
+          <div class="dont-have-an-container">
+            <span>Don’t have an account yet? </span>
+            <span class="register">Register</span>
+          </div>
+        </a>
+        <div class="box">
+          <a class="rectangle-parent" id="loginGoogle">
+            <div class="group-child"></div>
+            <img class="google-logo-png-suite-everythi-icon"
+              src="public/googlelogopngsuiteeverythingyouneedknowaboutgooglenewest0-2@2x.png"
+            />
+          </a>
+          <a class="rectangle-group" id="loginFacebook">
+            <div class="group-child"></div>
+            <img class="facebook-1-icon" alt="" src="public/facebook-1.svg" />
+          </a>
+        </div>
+       <div class="label-section">
+          <a class="forget-password" id="recuperarPswd">
+            <div class="forgot-your-password">Forgot your password?</div>
+          </a>
+          <input class="label" id="email" placeholder="Email" type="email" />
+
+          <input class="label1" id="pswd" placeholder="Password" type="password" />
+        </div>
+      </div>
+      </form>
+    </div>
+    <!-- fin login -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+      $(".get-started").click(function(e){
+        $(".welcome-screen-2").hide();
+        $(".login-page").show();
+      });
+    </script>
+  </body>
+</html>

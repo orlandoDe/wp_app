@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+a {
+	cursor: pointer;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inter: Inter;
+
+  /* Colors */
+  --white-color: #fff;
+  --gray-1: #7b6f72;
+  --color-whitesmoke: #f7f8f8;
+  --color-darkgray: #ada4a5;
+  --gray-3: #dddada;
+  --color-gray: #1d1617;
+
+    /* font sizes */
+  --link-medium-size: 12px;
+  --text-large-text-regular-size: 16px;
+  --title-h4-bold-size: 20px;
+
+    /* Paddings */
+  --padding-mini: 15px;
+  --padding-24xl: 43px;
+
+    /* Border radiuses */
+  --br-sm: 14px;
+
+    /* Effects */
+  --blue-shadow: 0px 10px 22px rgba(149, 173, 254, 0.3);
+}
+
