@@ -1,2 +1,4 @@
 .db_data/*
 docker-compose.yml
+wp-config.php
+        
