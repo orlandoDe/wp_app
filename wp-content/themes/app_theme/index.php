@@ -296,33 +296,6 @@ $id = $_GET['id'];
             
         });
 
-        $("#datepicker").datepicker({
-            onSelect: function (dateText, inst) {
-                // Show time inputs
-                $("#timeInputs").show();
-
-                // Output JSON
-                const startTime = $("#startTime").val();
-                const endTime = $("#endTime").val();
-                const jsonOutput = {
-                    date: dateText,
-                    startTime: startTime,
-                    endTime: endTime,
-                    trainerId: 1, // Replace with actual trainer ID
-                    studentId: 2, // Replace with actual student ID
-                    type: "training" // Replace with actual type
-                };
-
-                $("#jsonOutput").text(JSON.stringify(jsonOutput, null, 2));
-            }
-        });
-
-        $( document ).ready( function( $ ) {
-            if ( typeof acf !== 'undefined' ) {
-                console.log( 'ACF is defined', acf );
-            }
-        });
-
 
 
         $("#loginBtn").click(function(){
